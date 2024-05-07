@@ -24,7 +24,7 @@ struct PaymentsView: View {
                             break
                         }
                     }.listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                    .skeletonLoading()
+                        .skeletonLoadable()
                     Text("Payment Methods")
                         .font(.system(size: 14, weight: .semibold))
                         .listRowInsets(EdgeInsets(top: 25, leading: 16, bottom: 12, trailing: 16))

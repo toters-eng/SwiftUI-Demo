@@ -37,7 +37,7 @@ struct TopUpView: View {
             .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 16, trailing: 16))
             .listRowSeparator(.hidden)
             .buttonStyle(.borderless)
-            .skeletonLoading()
+            .skeletonLoadable()
         }.listStyle(.grouped)
         .scrollBounceBehavior(.basedOnSize)
         .scrollContentBackground(.hidden)

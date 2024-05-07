@@ -14,7 +14,6 @@
 		A96265C32BCD410D003FA53E /* SwiftUITestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96265C22BCD410D003FA53E /* SwiftUITestsTests.swift */; };
 		A96265CD2BCD410D003FA53E /* SwiftUITestsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96265CC2BCD410D003FA53E /* SwiftUITestsUITests.swift */; };
 		A96265CF2BCD410D003FA53E /* SwiftUITestsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96265CE2BCD410D003FA53E /* SwiftUITestsUITestsLaunchTests.swift */; };
-		A96265DD2BCD41A5003FA53E /* ElementaryUI in Frameworks */ = {isa = PBXBuildFile; productRef = A96265DC2BCD41A5003FA53E /* ElementaryUI */; };
 		A96265DF2BCD41F3003FA53E /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96265DE2BCD41F3003FA53E /* BalanceView.swift */; };
 		A96265E22BCD4232003FA53E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96265E12BCD4232003FA53E /* Palette.swift */; };
 		A96265E42BCD4327003FA53E /* PaymentMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96265E32BCD4327003FA53E /* PaymentMethodView.swift */; };
@@ -42,6 +41,7 @@
 		A962662C2BD10346003FA53E /* PaymentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962662B2BD10346003FA53E /* PaymentsRepository.swift */; };
 		A962662E2BD103F8003FA53E /* PaymentsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962662D2BD103F8003FA53E /* PaymentsViewFactory.swift */; };
 		A96266302BD10A50003FA53E /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962662F2BD10A50003FA53E /* UINavigationControllerExtension.swift */; };
+		A99E53172BEA040200800063 /* ElementaryUI in Frameworks */ = {isa = PBXBuildFile; productRef = A99E53162BEA040200800063 /* ElementaryUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A96265DD2BCD41A5003FA53E /* ElementaryUI in Frameworks */,
+				A99E53172BEA040200800063 /* ElementaryUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +323,7 @@
 			);
 			name = SwiftUITests;
 			packageProductDependencies = (
-				A96265DC2BCD41A5003FA53E /* ElementaryUI */,
+				A99E53162BEA040200800063 /* ElementaryUI */,
 			);
 			productName = SwiftUITests;
 			productReference = A96265AC2BCD410C003FA53E /* SwiftUITests.app */;
@@ -398,7 +398,7 @@
 			);
 			mainGroup = A96265A32BCD410C003FA53E;
 			packageReferences = (
-				A96265DB2BCD41A5003FA53E /* XCRemoteSwiftPackageReference "NJKit" */,
+				A99E53152BEA040200800063 /* XCRemoteSwiftPackageReference "ElementaryUI" */,
 			);
 			productRefGroup = A96265AD2BCD410C003FA53E /* Products */;
 			projectDirPath = "";
@@ -804,20 +804,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A96265DB2BCD41A5003FA53E /* XCRemoteSwiftPackageReference "NJKit" */ = {
+		A99E53152BEA040200800063 /* XCRemoteSwiftPackageReference "ElementaryUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/buildexperience/NJKit.git";
+			repositoryURL = "https://github.com/buildexperience/ElementaryUI";
 			requirement = {
-				kind = exactVersion;
-				version = 0.0.1;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A96265DC2BCD41A5003FA53E /* ElementaryUI */ = {
+		A99E53162BEA040200800063 /* ElementaryUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A96265DB2BCD41A5003FA53E /* XCRemoteSwiftPackageReference "NJKit" */;
+			package = A99E53152BEA040200800063 /* XCRemoteSwiftPackageReference "ElementaryUI" */;
 			productName = ElementaryUI;
 		};
 /* End XCSwiftPackageProductDependency section */
